@@ -71,7 +71,7 @@ export default function Testimonials() {
             Témoignages
           </p>
           <h2 className="font-serif text-5xl md:text-6xl font-light text-charcoal mb-4 leading-tight">
-            Ce qu'elles en{" "}
+            Ce qu’elles en{" "}
             <span className="italic font-medium text-gold">disent</span>
           </h2>
           <div className="flex items-center justify-center gap-4 mt-4">

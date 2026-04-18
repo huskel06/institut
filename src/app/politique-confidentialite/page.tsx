@@ -58,11 +58,11 @@ export default function PolitiqueConfidentialite() {
               </li>
               <li>
                 <strong>Numéro de téléphone</strong> : pour vous joindre en cas de
-                changement ou d'ajustement
+                changement ou d’ajustement
               </li>
             </ul>
             <p className="mt-2">
-              Aucune donnée bancaire ni aucun identifiant client n'est demandé sur ce site.
+              Aucune donnée bancaire ni aucun identifiant client n’est demandé sur ce site.
             </p>
           </section>
 
@@ -110,9 +110,9 @@ export default function PolitiqueConfidentialite() {
           </section>
 
           <section>
-            <h2 className="font-serif text-xl text-charcoal mb-3">6. Vos droits</h2>
+            <h2 className="font-serif text-xl text-charcoal mb-3">6. Votre droits</h2>
             <p>
-              Conformément au RGPD, vous pouvez demander l'accès, la rectification,
+              Conformément au RGPD, vous pouvez demander l’accès, la rectification,
               la suppression ou la limitation du traitement de vos données.
             </p>
             {showPhone && siteSettings.phone_display && siteSettings.phone_href ? (
@@ -125,7 +125,7 @@ export default function PolitiqueConfidentialite() {
               </p>
             ) : (
               <p className="mt-3 text-charcoal/65">
-                Les coordonnées de contact dédiées à l'exercice de ces droits seront
+                Les coordonnées de contact dédiées à l’exercice de ces droits seront
                 complétées avant mise en production publique.
               </p>
             )}
@@ -134,7 +134,7 @@ export default function PolitiqueConfidentialite() {
           <section>
             <h2 className="font-serif text-xl text-charcoal mb-3">7. Cookies</h2>
             <p>
-              Ce site n'utilise pas de traceur publicitaire. Seuls des cookies techniques
+              Ce site n’utilise pas de traceur publicitaire. Seuls des cookies techniques
               indispensables à son fonctionnement peuvent être utilisés.
             </p>
           </section>
@@ -142,7 +142,7 @@ export default function PolitiqueConfidentialite() {
           <section>
             <h2 className="font-serif text-xl text-charcoal mb-3">8. Réclamation</h2>
             <p>
-              Si vous estimez que le traitement de vos données n'est pas conforme, vous
+              Si vous estimez que le traitement de vos données n’est pas conforme, vous
               pouvez adresser une réclamation à la CNIL :
               <br />
               <a

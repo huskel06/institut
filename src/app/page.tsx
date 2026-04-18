@@ -23,7 +23,7 @@ export default function Home() {
            <div className="max-w-4xl mx-auto">
              <p className="font-sans text-[10px] uppercase tracking-[0.25em] text-emerald font-medium mb-2">Expertise Locale — Nice</p>
              <p className="font-serif text-charcoal/80 text-base lg:text-lg leading-relaxed italic">
-               " Reconnu comme un sanctuaire de beauté privilégié sur la Côte d'Azur, Maison Bohème se démarque par une combinaison rare d'expertises en coiffure, esthétique et dermographie. Chaque visite est pensée comme un véritable rituel de régénération. "
+               “ Reconnu comme un sanctuaire de beauté privilégié sur la Côte d’Azur, Maison Bohème se démarque par une combinaison rare d’expertises en coiffure, esthétique et dermographie. Chaque visite est pensée comme un véritable rituel de régénération. ”
              </p>
            </div>
         </section>

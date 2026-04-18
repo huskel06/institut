@@ -33,7 +33,7 @@ export default function Atelier() {
           </p>
           <h2 className="font-serif text-5xl md:text-6xl font-light text-charcoal mb-4 leading-tight">
             Un lieu où le temps{" "}
-            <span className="italic font-medium text-emerald">s'arrête</span>
+            <span className="italic font-medium text-emerald">s’arrête</span>
           </h2>
           <p className="font-sans text-base text-charcoal/[0.78] max-w-lg mx-auto mt-2 leading-relaxed">
             Une atmosphère feutrée, des gestes précis, une attention
@@ -59,28 +59,28 @@ export default function Atelier() {
 
               <div className="pl-8">
                 <p className="font-sans text-base text-charcoal leading-relaxed mb-6">
-                  Maison Bohème est plus qu'un institut de beauté.
-                  C'est une adresse feutrée, au cœur de Nice, où
-                  l'esprit bohème rencontre une élégance simple.
+                  Maison Bohème est plus qu’un institut de beauté.
+                  C’est une adresse feutrée, au cœur de Nice, où
+                  l’esprit bohème rencontre une élégance simple.
                 </p>
 
                 <p className="font-sans text-base text-charcoal leading-relaxed mb-6">
                   Guirlandes discrètes, velours émeraude, senteurs délicates,
-                  lumière douce : l'atmosphère accompagne le soin sans jamais
+                  lumière douce : l’atmosphère accompagne le soin sans jamais
                   prendre toute la place.
                 </p>
 
                 <p className="font-sans text-base text-charcoal leading-relaxed mb-8">
-                  Ici, chaque rendez-vous garde quelque chose d'un rituel. Les
+                  Ici, chaque rendez-vous garde quelque chose d’un rituel. Les
                   produits sont choisis avec exigence, le geste reste précis,
-                  et le temps reprend un peu d'espace.
+                  et le temps reprend un peu d’espace.
                 </p>
 
                 <div className="flex items-start gap-3 p-5 rounded-[1.15rem] bg-emerald/[0.055] border border-emerald/[0.12] shadow-[0_10px_30px_rgba(58,54,50,0.04)]">
                   <Heart size={18} strokeWidth={1.5} className="text-gold mt-0.5 shrink-0" />
                   <span className="font-serif text-base italic text-charcoal/75 leading-relaxed">
-                    "La beauté commence lorsque l'on se sent pleinement
-                    soi. Ici, nous aidons simplement à le révéler."
+                    “La beauté commence lorsque l’on se sent pleinement
+                    soi. Ici, nous aidons simplement à le révéler.”
                   </span>
                 </div>
               </div>

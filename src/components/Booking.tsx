@@ -513,7 +513,7 @@ export default function Booking() {
                 transition={{ duration: 0.3 }}
               >
                 <h3 className="font-serif text-xl text-charcoal mb-6 text-center">
-                  Choisissez la date et l'heure
+                  Choisissez la date et l’heure
                 </h3>
 
                 <div className="mb-6">
@@ -744,7 +744,7 @@ export default function Booking() {
                         </div>
                       </div>
                       <span className="font-sans text-xs text-charcoal/80 leading-relaxed">
-                        J'accepte que mes données (nom, téléphone) soient utilisées pour
+                        J’accepte que mes données (nom, téléphone) soient utilisées pour
                         gérer mon rendez-vous. Consultez notre{" "}
                         <a
                           href="/politique-confidentialite/"

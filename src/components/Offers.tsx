@@ -118,7 +118,7 @@ export default function Offers() {
 
                       {validUntil ? (
                         <span className="font-sans text-[0.72rem] uppercase tracking-[0.18em] text-charcoal/50">
-                          Jusqu'au {validUntil}
+                          Jusqu’au {validUntil}
                         </span>
                       ) : null}
                     </div>
