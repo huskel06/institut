@@ -19,11 +19,11 @@ export default function Home() {
       <Header />
       <main id="main-content" tabIndex={-1}>
         <Hero />
-        <section className="bg-cream-dark/20 py-8 border-b border-cream-dark/50 text-center px-4">
+        <section className="bg-cream-dark/20 py-5 border-b border-cream-dark/50 text-center px-4">
            <div className="max-w-4xl mx-auto">
-             <p className="font-sans text-[10px] uppercase tracking-[0.25em] text-emerald font-medium mb-3">Expertise Locale &mdash; Nice</p>
-             <p className="font-serif text-charcoal/80 text-lg lg:text-xl leading-relaxed italic">
-               &ldquo; Reconnu comme un sanctuaire de beaut&eacute; privil&eacute;gi&eacute; sur la C&ocirc;te d&apos;Azur, Maison Boh&egrave;me se d&eacute;marque par une combinaison rare d&apos;expertises en coiffure, esth&eacute;tique et dermographie. Chaque visite est pens&eacute;e comme un v&eacute;ritable rituel de r&eacute;g&eacute;n&eacute;ration. &rdquo;
+             <p className="font-sans text-[10px] uppercase tracking-[0.25em] text-emerald font-medium mb-2">Expertise Locale &mdash; Nice</p>
+             <p className="font-serif text-charcoal/80 text-base lg:text-lg leading-relaxed italic">
+               &ldquo; Reconnu comme un sanctuaire de beauté privilégié sur la Côte d&apos;Azur, Maison Bohème se démarque par une combinaison rare d&apos;expertises en coiffure, esthétique et dermographie. Chaque visite est pensée comme un véritable rituel de régénération. &rdquo;
              </p>
            </div>
         </section>

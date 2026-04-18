@@ -45,7 +45,7 @@ export default function Offers() {
     return emptyStateLines[new Date().getDate() % emptyStateLines.length];
   }, []);
 
-  if (!loaded) {
+  if (!loaded || (offers.length === 0)) {
     return null;
   }
 
@@ -73,7 +73,7 @@ export default function Offers() {
           </p>
         </motion.div>
 
-        {offers.length > 0 ? (
+        {offers.length > 0 && (
           <div className="space-y-3">
             {offers.map((offer, index) => {
               const validUntil = formatOfferDate(offer.valid_until);
@@ -101,7 +101,9 @@ export default function Offers() {
                       </div>
 
                       {offer.description ? (
-                        <p className="font-sans text-sm md:text-[0.95rem] text-charcoal/70 leading-relaxed mt-3 max-w-2xl">
+                        <p className="font-sans text-[0.97rem] text-charcoal/90 leading-relaxed">
+                          <span className="font-semibold text-charcoal">{offer.title}</span>
+                          {" — "}
                           {offer.description}
                         </p>
                       ) : null}
@@ -125,18 +127,6 @@ export default function Offers() {
               );
             })}
           </div>
-        ) : (
-          <motion.div
-            className="max-w-2xl mx-auto rounded-[1.5rem] border border-gold/15 bg-white/[0.45] px-6 py-5 text-center shadow-[0_12px_34px_rgba(58,54,50,0.04)] backdrop-blur-[1px]"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <p className="font-serif text-xl text-charcoal/90 leading-relaxed">
-              {emptyStateText}
-            </p>
-          </motion.div>
         )}
       </div>
     </section>

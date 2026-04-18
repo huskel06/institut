@@ -69,7 +69,7 @@ export default function TeamMessages() {
                 <div className="min-w-0">
                   <p className="font-sans text-[0.97rem] text-charcoal/90 leading-relaxed">
                     <span className="font-semibold text-charcoal">{message.staff_name}</span>
-                    {" â€” "}
+                    {" — "}
                     {message.message}
                   </p>
 
