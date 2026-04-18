@@ -25,13 +25,13 @@ export function CatalogueButton({ onClick, className = "" }: CatalogueButtonProp
         transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}
       />
       <BookOpen className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover:-rotate-3" />
-      <span className="relative z-10">D&eacute;couvrir tout le catalogue</span>
+      <span className="relative z-10">Découvrir tout le catalogue</span>
       <motion.span
         className="relative z-10 text-gold-light"
         animate={{ x: [0, 4, 0] }}
         transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
       >
-        &rarr;
+        →
       </motion.span>
     </motion.button>
   );

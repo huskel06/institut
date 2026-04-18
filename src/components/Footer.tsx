@@ -39,7 +39,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <h3 className="font-serif text-2xl font-semibold text-cream">
-                Maison <span className="text-emerald-light">Boh&egrave;me</span>
+                Maison <span className="text-emerald-light">Bohème</span>
               </h3>
             </div>
 
@@ -123,20 +123,20 @@ export default function Footer() {
 
         <div className="mt-12 pt-6 border-t border-cream/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-sans text-xs text-cream/40">
-            &copy; 2026 {siteSettings.brand_name}. Tous droits r&eacute;serv&eacute;s.
+            &copy; 2026 {siteSettings.brand_name}. Tous droits réservés.
           </p>
           <div className="flex items-center gap-4">
             <Link
               href="/mentions-legales/"
               className="font-sans text-xs text-cream/30 hover:text-cream/60 transition-colors"
             >
-              Mentions l&eacute;gales
+              Mentions légales
             </Link>
             <Link
               href="/politique-confidentialite/"
               className="font-sans text-xs text-cream/30 hover:text-cream/60 transition-colors"
             >
-              Confidentialit&eacute;
+              Confidentialité
             </Link>
           </div>
         </div>

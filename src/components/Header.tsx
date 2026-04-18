@@ -118,7 +118,7 @@ export default function Header() {
                 scrolled ? "text-emerald" : "text-gold-light"
               }`}
             >
-              Boh&egrave;me
+              Bohème
             </span>
           </div>
         </a>
@@ -165,7 +165,7 @@ export default function Header() {
                   : "border-gold-light/40 text-gold-light hover:bg-gold-light hover:text-charcoal"
               }`}
             >
-              R&eacute;server
+              Réserver
             </a>
           </li>
         </ul>
@@ -236,7 +236,7 @@ export default function Header() {
               transition={{ delay: 0.3 }}
               onClick={() => setMobileOpen(false)}
             >
-              R&eacute;server
+              Réserver
             </motion.a>
 
             {showPhone && siteSettings.phone_href ? (

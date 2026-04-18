@@ -38,7 +38,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          Maison Boh&egrave;me
+          Maison Bohème
         </motion.h1>
 
         {/* Tagline */}
@@ -48,7 +48,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
         >
-          Institut de beaut&eacute; &mdash; Nice
+          Institut de beauté — Nice
         </motion.p>
 
         {/* Decorative line */}
@@ -70,8 +70,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.1 }}
         >
-          Un cocon chaleureux o&ugrave; l&apos;esprit boh&egrave;me rencontre l&apos;&eacute;l&eacute;gance,
-          pens&eacute; pour sublimer votre beaut&eacute;.
+          Un cocon chaleureux où l&apos;esprit bohème rencontre l&apos;élégance,
+          pensé pour sublimer votre beauté.
         </motion.p>
 
         {/* CTA */}
@@ -81,7 +81,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 1.3 }}
         >
           <PremiumButton href="#reservation">
-            R&eacute;server mon instant
+            Réserver mon instant
           </PremiumButton>
         </motion.div>
       </div>

@@ -15,8 +15,8 @@ interface Offer {
 }
 
 const emptyStateLines = [
-  "Aucune offre particuli\u00e8re pour le moment. L'accueil, lui, reste le m\u00eame.",
-  "Pas d'offre en cours aujourd'hui, seulement notre fa\u00e7on de prendre soin de vous.",
+  "Aucune offre particulière pour le moment. L'accueil, lui, reste le même.",
+  "Pas d'offre en cours aujourd'hui, seulement notre façon de prendre soin de vous.",
   "Les offres reviendront en leur temps. L'attention, elle, ne change pas.",
 ];
 
@@ -65,11 +65,11 @@ export default function Offers() {
             En ce moment
           </p>
           <h2 className="font-serif text-3xl md:text-[2.65rem] font-light text-charcoal leading-tight">
-            Quelques rituels privil&eacute;gi&eacute;s
+            Quelques rituels privilégiés
           </h2>
           <p className="font-sans text-sm md:text-[0.95rem] text-charcoal/70 max-w-xl mx-auto mt-3 leading-relaxed">
-            Lorsque certains rituels se pr&ecirc;tent &agrave; une parenth&egrave;se
-            particuli&egrave;re, nous les partageons ici comme des invitations au ressourcement.
+            Lorsque certains rituels se prêtent à une parenthèse
+            particulière, nous les partageons ici comme des invitations au ressourcement.
           </p>
         </motion.div>
 
@@ -118,7 +118,7 @@ export default function Offers() {
 
                       {validUntil ? (
                         <span className="font-sans text-[0.72rem] uppercase tracking-[0.18em] text-charcoal/50">
-                          Jusqu&apos;au {validUntil}
+                          Jusqu'au {validUntil}
                         </span>
                       ) : null}
                     </div>

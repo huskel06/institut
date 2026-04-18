@@ -177,7 +177,7 @@ export default function Booking() {
 
     if (!data.consent) {
       nextErrors.consent =
-        "Merci de confirmer l'utilisation de vos donn\u00e9es pour la r\u00e9servation.";
+        "Merci de confirmer l'utilisation de vos données pour la réservation.";
       focusTarget = focusTarget ?? consentInputRef.current;
     }
 
@@ -241,7 +241,7 @@ export default function Booking() {
       goNext();
     } catch (e) {
       console.error(e);
-      setSendError("Une difficult\u00e9 technique emp\u00eache la confirmation pour l'instant.");
+      setSendError("Une difficulté technique empêche la confirmation pour l'instant.");
     } finally {
       setSending(false);
     }
@@ -351,7 +351,7 @@ export default function Booking() {
 
         {!submitted ? (
           <div className="flex items-center justify-center gap-2 mb-10">
-            {["Prestation", "Soin", "Date", "Coordonn\u00e9es"].map((label, index) => (
+            {["Prestation", "Soin", "Date", "Coordonnées"].map((label, index) => (
               <div key={label} className="flex items-center gap-2">
                 <div
                   className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-sans transition-all duration-300 ${
@@ -513,7 +513,7 @@ export default function Booking() {
                 transition={{ duration: 0.3 }}
               >
                 <h3 className="font-serif text-xl text-charcoal mb-6 text-center">
-                  Choisissez la date et l&apos;heure
+                  Choisissez la date et l'heure
                 </h3>
 
                 <div className="mb-6">
@@ -744,7 +744,7 @@ export default function Booking() {
                         </div>
                       </div>
                       <span className="font-sans text-xs text-charcoal/80 leading-relaxed">
-                        J&apos;accepte que mes données (nom, téléphone) soient utilisées pour
+                        J'accepte que mes données (nom, téléphone) soient utilisées pour
                         gérer mon rendez-vous. Consultez notre{" "}
                         <a
                           href="/politique-confidentialite/"
@@ -809,22 +809,22 @@ export default function Booking() {
                   <ShieldCheck size={40} strokeWidth={1.5} />
                 </div>
                 <h3 className="font-serif text-3xl text-charcoal mb-4">
-                  Votre rendez-vous est <span className="text-emerald italic">confirm\u00e9</span>
+                  Votre rendez-vous est <span className="text-emerald italic">confirmé</span>
                 </h3>
                 <p className="font-sans text-sm text-charcoal/70 max-w-sm mx-auto mb-8 leading-relaxed">
-                  Merci {data.name.split(" ")[0]}, nous avons bien re\u00e7u votre r\u00e9servation pour le{" "}
+                  Merci {data.name.split(" ")[0]}, nous avons bien reçu votre réservation pour le{" "}
                   <span className="font-medium text-charcoal">
                     {data.date?.toLocaleDateString("fr-FR", {
                       day: "numeric",
                       month: "long",
                     })}{" "}
-                    \u00e0 {data.time}
+                    à {data.time}
                   </span>
                   .
                 </p>
                 <div className="bg-cream-dark/20 rounded-xl p-4 mb-10 text-left border border-cream-dark/30">
                   <p className="font-sans text-[10px] tracking-widest uppercase text-gold font-bold mb-2">
-                    R\u00e9capitulatif
+                    Récapitulatif
                   </p>
                   <div className="flex justify-between items-center">
                     <span className="font-sans text-xs text-charcoal/80">Soin :</span>
@@ -838,7 +838,7 @@ export default function Booking() {
                   onClick={handleReset}
                   className="font-sans text-sm text-gold hover:text-charcoal transition-colors underline underline-offset-4 cursor-pointer"
                 >
-                  R\u00e9server un autre soin
+                  Réserver un autre soin
                 </button>
               </motion.div>
             ) : null}

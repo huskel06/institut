@@ -56,7 +56,7 @@ export default function Testimonials() {
         aria-hidden="true"
         className="absolute top-10 left-1/2 -translate-x-1/2 font-serif text-[11rem] leading-none text-gold/[0.05] select-none pointer-events-none"
       >
-        &ldquo;
+        “
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-10">
@@ -71,7 +71,7 @@ export default function Testimonials() {
             Témoignages
           </p>
           <h2 className="font-serif text-5xl md:text-6xl font-light text-charcoal mb-4 leading-tight">
-            Ce qu&apos;elles en{" "}
+            Ce qu'elles en{" "}
             <span className="italic font-medium text-gold">disent</span>
           </h2>
           <div className="flex items-center justify-center gap-4 mt-4">
@@ -110,7 +110,7 @@ export default function Testimonials() {
                 aria-hidden="true"
                 className="font-serif text-5xl leading-none text-gold/[0.34] mb-2 block"
               >
-                &ldquo;
+                “
               </span>
 
               <p className="font-serif text-xl md:text-2xl italic font-light text-charcoal leading-relaxed max-w-2xl">

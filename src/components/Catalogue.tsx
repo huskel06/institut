@@ -512,7 +512,7 @@ export function CatalogueModal({ isOpen, onClose }: CatalogueProps) {
 
                 <div className="relative">
                   <p className="font-sans text-xs tracking-[0.3em] uppercase text-white/60 mb-2">
-                    Maison Boh&egrave;me
+                    Maison Bohème
                   </p>
                   <h2 id="catalogue-title" className="font-serif text-4xl md:text-5xl font-light text-white mb-1">
                     Notre <span className="italic font-medium text-gold-light">Catalogue</span>
