@@ -31,6 +31,7 @@ export default function Atelier() {
           <p className="font-sans text-sm tracking-[0.3em] uppercase text-emerald font-medium mb-4">
             Notre philosophie
           </p>
+          <h2 className="font-serif text-5xl md:text-6xl font-light text-charcoal mb-4 leading-tight">
             Un lieu où le temps{" "}
             <span className="italic font-medium text-emerald">s&apos;arrête</span>
           </h2>
