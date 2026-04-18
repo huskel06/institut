@@ -7,7 +7,9 @@ import {
   Trash2, Loader2, MessageCircle, Sparkles, Megaphone, Image as ImageIcon, Plus, X
 } from "lucide-react";
 import { UserButton } from "@clerk/nextjs";
+import Image from "next/image";
 import { useQuery, useMutation } from "convex/react";
+
 import { api } from "../../../convex/_generated/api";
 import { Id } from "../../../convex/_generated/dataModel";
 import serviceCatalog from "../../../config/service-catalog.json";
@@ -427,7 +429,15 @@ export default function AdminPage() {
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 {photos.map((photo) => (
                   <div key={photo._id} className="group relative aspect-square rounded-2xl overflow-hidden bg-cream-dark/20 border border-cream-dark/30 shadow-sm">
-                    {photo.src && <img src={photo.src} className="w-full h-full object-cover transition-transform group-hover:scale-110" alt="" />}
+                    {photo.src && (
+                      <Image 
+                        src={photo.src} 
+                        fill
+                        className="object-cover transition-transform group-hover:scale-110" 
+                        alt={photo.alt_text || photo.caption || ""} 
+                        sizes="(max-width: 768px) 50vw, 25vw"
+                      />
+                    )}
                     <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3">
                        <div className="flex items-center justify-between gap-1">
                           <button 
