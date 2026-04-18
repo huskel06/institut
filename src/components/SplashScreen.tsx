@@ -95,21 +95,7 @@ export default function SplashScreen() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.2 }}
             >
-              <div className="relative mb-4">
-                <Image
-                  src="/logo2.png"
-                  alt="Logo"
-                  width={60}
-                  height={60}
-                  className="rounded-full opacity-80"
-                  priority
-                />
-                <motion.div 
-                  className="absolute inset-0 rounded-full border border-gold/20"
-                  animate={{ scale: [1, 1.15, 1], opacity: [0.3, 0, 0.3] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                />
-              </div>
+              <div className="mb-4" />
 
               <h1 className="font-serif text-3xl md:text-4xl text-charcoal/90 tracking-wider">
                 Maison <span className="italic text-emerald">Bohème</span>

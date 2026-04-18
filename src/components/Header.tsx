@@ -106,14 +106,7 @@ export default function Header() {
         className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-3"
         aria-label="Navigation principale"
       >
-        <a href="#" className="relative z-10 flex items-center gap-3">
-          <Image
-            src="/logo2.png"
-            alt="Logo Maison Boh&egrave;me"
-            width={56}
-            height={56}
-            className="shadow-sm"
-          />
+        <a href="#" className="relative z-10 flex items-center">
           <div
             className={`font-script text-2xl md:text-3xl transition-colors duration-500 ${
               scrolled ? "text-charcoal" : "text-cream"
@@ -219,13 +212,7 @@ export default function Header() {
             aria-modal="true"
             aria-label="Menu mobile"
           >
-            <Image
-              src="/logo2.png"
-              alt="Logo"
-              width={60}
-              height={60}
-              className="rounded-full shadow-md mb-4"
-            />
+            <div className="mb-8" />
 
             {navLinks.map((link, index) => (
               <motion.a

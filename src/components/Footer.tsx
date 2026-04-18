@@ -37,8 +37,7 @@ export default function Footer() {
           transition={{ duration: 0.8 }}
         >
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <Image src="/logo2.png" alt="Logo Maison Boh&egrave;me" width={50} height={50} />
+            <div className="flex items-center mb-4">
               <h3 className="font-serif text-2xl font-semibold text-cream">
                 Maison <span className="text-emerald-light">Boh&egrave;me</span>
               </h3>
