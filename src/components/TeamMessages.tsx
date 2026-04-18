@@ -44,10 +44,10 @@ export default function TeamMessages() {
           transition={{ duration: 0.5 }}
         >
           <p className="font-sans text-xs tracking-[0.3em] uppercase text-gold font-medium mb-2">
-            Informations utiles
+            ACTUALITÉS
           </p>
           <h2 className="font-serif text-2xl md:text-[2rem] text-charcoal leading-tight">
-            Avant votre visite
+            Le Carnet de Maison Bohème
           </h2>
         </motion.div>
 

@@ -130,10 +130,10 @@ export default function AdminPage() {
       <header className="bg-white/70 backdrop-blur-xl border-b border-cream-dark/30 sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 md:px-8 py-3 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <Link href="/" className="font-serif text-xl text-charcoal">
+            <Link href="/" className="font-serif text-2xl text-charcoal">
               Maison <span className="text-emerald">Bohème</span>
             </Link>
-            <span className="hidden sm:block font-sans text-[10px] tracking-wider uppercase text-emerald bg-emerald-pale px-2 py-0.5 rounded-full">Admin</span>
+            <span className="hidden sm:block font-sans text-xs tracking-wider uppercase text-emerald bg-emerald-pale px-2 py-0.5 rounded-full font-semibold">Admin</span>
           </div>
           
           <div className="flex items-center gap-4">
@@ -154,11 +154,11 @@ export default function AdminPage() {
                 <button
                   key={key}
                   onClick={() => setTab(key)}
-                  className={`flex items-center gap-1.5 px-3 py-2 rounded-full font-sans text-xs transition-all cursor-pointer ${
-                    tab === key ? "bg-emerald text-white" : "text-charcoal-light hover:bg-cream-dark/50"
+                  className={`flex items-center gap-1.5 px-4 py-2 rounded-full font-sans text-sm font-medium transition-all cursor-pointer ${
+                    tab === key ? "bg-emerald text-white" : "text-charcoal hover:bg-cream-dark/50"
                   }`}
                 >
-                  <Icon size={14} /> {label}
+                  <Icon size={16} /> {label}
                 </button>
               ))}
             </div>
@@ -207,8 +207,8 @@ export default function AdminPage() {
               </div>
             ) : reservations.length === 0 ? (
               <div className="text-center py-16">
-                <Calendar size={40} className="mx-auto text-cream-dark mb-4" />
-                <p className="font-sans text-sm text-charcoal/60">Aucun rendez-vous ce jour</p>
+                <Calendar size={48} className="mx-auto text-cream-dark mb-4" />
+                <p className="font-sans text-base text-charcoal/80">Aucun rendez-vous ce jour</p>
               </div>
             ) : (
               <div className="space-y-3">
@@ -225,10 +225,10 @@ export default function AdminPage() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 mb-1">
-                          <span className="font-sans text-sm font-medium text-charcoal">{rdv.serviceLabel}</span>
+                          <span className="font-sans text-base font-semibold text-charcoal">{rdv.serviceLabel}</span>
                         </div>
-                        <div className="font-sans text-xs text-charcoal/80 flex items-center gap-1">
-                          <Users size={11} />
+                        <div className="font-sans text-sm text-charcoal/90 flex items-center gap-1">
+                          <Users size={12} />
                           {rdv.clientName} - {rdv.phone}
                         </div>
                       </div>
@@ -302,7 +302,7 @@ export default function AdminPage() {
                     </button>
                     <button 
                       onClick={() => confirm("Supprimer ?") && deleteOffer({ id: offer._id })}
-                      className="p-2 rounded-lg text-rose hover:bg-rose-pale transition-colors cursor-pointer"
+                      className="p-2 rounded-lg text-rose hover:bg-rose-pale transition-colors cursor-pointer border border-rose/20"
                     >
                       <Trash2 size={16} />
                     </button>
@@ -404,8 +404,8 @@ export default function AdminPage() {
                       <input name="staff_name" placeholder="Nom du membre" className="w-full bg-cream p-4 rounded-xl outline-none font-sans" required />
                       <textarea name="message" placeholder="Votre message" className="w-full bg-cream p-4 rounded-xl outline-none font-sans h-24" required />
                       <div className="grid grid-cols-2 gap-4">
-                        <label className="flex flex-col gap-1 font-sans text-xs uppercase text-charcoal/50">Du <input name="date_from" type="date" className="bg-cream p-3 rounded-xl outline-none text-charcoal" required /></label>
-                        <label className="flex flex-col gap-1 font-sans text-xs uppercase text-charcoal/50">Au <input name="date_to" type="date" className="bg-cream p-3 rounded-xl outline-none text-charcoal" required /></label>
+                        <label className="flex flex-col gap-1 font-sans text-xs uppercase font-bold text-charcoal/70">Du <input name="date_from" type="date" className="bg-cream p-3 rounded-xl border border-cream-dark/30 outline-none text-charcoal" required /></label>
+                        <label className="flex flex-col gap-1 font-sans text-xs uppercase font-bold text-charcoal/70">Au <input name="date_to" type="date" className="bg-cream p-3 rounded-xl border border-cream-dark/30 outline-none text-charcoal" required /></label>
                       </div>
                       <button className="w-full bg-emerald text-white py-4 rounded-xl font-sans font-medium hover:bg-emerald/90 transition-all cursor-pointer">Enregistrer</button>
                     </form>
