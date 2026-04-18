@@ -134,7 +134,7 @@ export default function Testimonials() {
               key={index}
               type="button"
               onClick={() => goTo(index)}
-              aria-label={`T\u00e9moignage ${index + 1}`}
+              aria-label={`Témoignage ${index + 1}`}
               className={`rounded-full transition-all duration-300 ${
                 index === current
                   ? "h-1.5 w-6 bg-gold/80"

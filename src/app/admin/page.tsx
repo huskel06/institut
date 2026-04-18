@@ -15,9 +15,9 @@ import { Id } from "../../../convex/_generated/dataModel";
 import serviceCatalog from "../../../config/service-catalog.json";
 
 const STATUS_LABELS: Record<string, { label: string; color: string }> = {
-  confirmed: { label: "Confirm\u00e9", color: "bg-emerald-pale text-emerald" },
-  completed: { label: "Termin\u00e9", color: "bg-sage-light text-charcoal" },
-  cancelled: { label: "Annul\u00e9", color: "bg-rose-pale text-rose" },
+  confirmed: { label: "Confirmé", color: "bg-emerald-pale text-emerald" },
+  completed: { label: "Terminé", color: "bg-sage-light text-charcoal" },
+  cancelled: { label: "Annulé", color: "bg-rose-pale text-rose" },
   no_show: { label: "Absent", color: "bg-cream-dark text-charcoal-light" },
 };
 
@@ -75,7 +75,7 @@ export default function AdminPage() {
         active: s.active
       }));
       await seedServices({ services: formattedServices });
-      alert("Catalogue import\u00e9 avec succ\u00e8s !");
+      alert("Catalogue importé avec succès !");
     } catch (e) {
       console.error(e);
       alert("Erreur lors de l'import : " + (e instanceof Error ? e.message : "Inconnue"));
@@ -87,7 +87,7 @@ export default function AdminPage() {
       await updateStatus({ id, status });
     } catch (e) {
       console.error(e);
-      alert("Erreur lors de la mise \u00e0 jour du statut");
+      alert("Erreur lors de la mise à jour du statut");
     }
   };
 
@@ -105,7 +105,7 @@ export default function AdminPage() {
       });
       const { storageId } = await result.json();
       await sendImage({ storageId });
-      alert("Image envoy\u00e9e !");
+      alert("Image envoyée !");
     } catch (e) {
       console.error(e);
       alert("Erreur d'upload");
@@ -116,7 +116,7 @@ export default function AdminPage() {
 
 
   const handleSendSMS = async (id: string) => {
-    alert("Simulation SMS : Rappel r\u00e9ussi pour " + id);
+    alert("Simulation SMS : Rappel réussi pour " + id);
   };
 
   const shiftDate = (days: number) => {
@@ -131,7 +131,7 @@ export default function AdminPage() {
         <div className="max-w-6xl mx-auto px-4 md:px-8 py-3 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/" className="font-serif text-xl text-charcoal">
-              Maison <span className="text-emerald">Boh\u00e8me</span>
+              Maison <span className="text-emerald">Bohème</span>
             </Link>
             <span className="hidden sm:block font-sans text-[10px] tracking-wider uppercase text-emerald bg-emerald-pale px-2 py-0.5 rounded-full">Admin</span>
           </div>
@@ -147,7 +147,7 @@ export default function AdminPage() {
               {([
                 { key: "agenda" as Tab, icon: Calendar, label: "Agenda" },
                 { key: "offers" as Tab, icon: Sparkles, label: "Offres" },
-                { key: "team" as Tab, icon: Megaphone, label: "Note d'\u00e9quipe" },
+                { key: "team" as Tab, icon: Megaphone, label: "Note d'équipe" },
                 { key: "gallery" as Tab, icon: ImageIcon, label: "Galerie" },
                 { key: "clients" as Tab, icon: Users, label: "Clients" },
               ]).map(({ key, icon: Icon, label }) => (
@@ -248,7 +248,7 @@ export default function AdminPage() {
                             <button
                               onClick={() => handleStatusChange(rdv._id, "completed")}
                               className="p-2 rounded-lg hover:bg-emerald-pale text-emerald transition-colors cursor-pointer"
-                              title="Termin\u00e9"
+                              title="Terminé"
                             >
                               <Check size={14} />
                             </button>
@@ -273,7 +273,7 @@ export default function AdminPage() {
         {tab === "offers" && (
           <div className="space-y-6">
             <div className="flex items-center justify-between">
-              <h2 className="font-serif text-2xl text-charcoal">Offres Sp\u00e9ciales</h2>
+              <h2 className="font-serif text-2xl text-charcoal">Offres Spéciales</h2>
               <button 
                 onClick={() => setShowOfferForm(true)}
                 className="flex items-center gap-2 bg-gold text-white px-4 py-2 rounded-xl text-sm font-sans hover:bg-gold-light transition-all cursor-pointer"
@@ -315,7 +315,7 @@ export default function AdminPage() {
                <div className="fixed inset-0 bg-charcoal/60 backdrop-blur-md z-[100] flex items-center justify-center p-4">
                  <div className="bg-white rounded-3xl w-full max-w-md p-8 shadow-2xl">
                     <div className="flex justify-between items-center mb-6">
-                      <h3 className="font-serif text-2xl text-charcoal">Cr\u00e9er une offre</h3>
+                      <h3 className="font-serif text-2xl text-charcoal">Créer une offre</h3>
                       <button onClick={() => setShowOfferForm(false)} className="text-charcoal/40 hover:text-charcoal cursor-pointer"><X size={24}/></button>
                     </div>
                     <form className="space-y-4" onSubmit={async (e) => {
@@ -463,7 +463,7 @@ export default function AdminPage() {
         {tab === "clients" && (
            <div className="text-center py-16">
              <Users size={40} className="mx-auto text-cream-dark mb-4" />
-             <p className="font-sans text-sm text-charcoal/60">Module Clients prochainement activ\u00e9 sur Convex</p>
+             <p className="font-sans text-sm text-charcoal/60">Module Clients prochainement activé sur Convex</p>
            </div>
         )}
 

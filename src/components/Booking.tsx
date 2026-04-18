@@ -652,7 +652,7 @@ export default function Booking() {
                 transition={{ duration: 0.3 }}
               >
                 <h3 className="font-serif text-xl text-charcoal mb-6 text-center">
-                  Vos coordonn\u00e9es
+                  Vos coordonnées
                 </h3>
 
                 <div className="space-y-4">

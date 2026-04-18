@@ -29,7 +29,7 @@ const prestations = [
   },
   {
     icon: Sparkles,
-    title: "Esth\u00e9tique",
+    title: "Esthétique",
     subtitle: "Un sanctuaire de douceur pour sublimer votre peau.",
     services: [
       "Soin visage Hydrafacial",
@@ -44,11 +44,11 @@ const prestations = [
   {
     icon: Hand,
     title: "Ongles & dermographie",
-    subtitle: "Un rituel de pr\u00e9cision pour l'\u00e9l\u00e9gance de vos mains.",
+    subtitle: "Un rituel de précision pour l'élégance de vos mains.",
     services: [
       "Pose semi-permanent",
       "Gainage gel",
-      "Beaut\u00e9 des mains spa",
+      "Beauté des mains spa",
       "Dermographie",
     ],
     buttonText: "Sublimer mes mains",
