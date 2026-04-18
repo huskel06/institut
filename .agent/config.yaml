@@ -1,0 +1,65 @@
+# ==========================================================
+# V9 INDUSTRIAL CONFIG - GEMINI 3.1 & MASTERY SKILLS
+# ==========================================================
+version: "13.1-industrial"
+
+# 1. MOTEUR & ORCHESTRATION (Haute Précision)
+orchestration:
+  strategy: "chain-of-thought-bridge"
+  primary: "gemini-3.1-flash"
+  reviewer: "gemini-3.1-pro-high"
+  temperature: 0.2
+  trigger: "on-render-complete"
+  auto_fix: true
+  max_bridge_calls_per_session: 5
+
+# 2. ACTIVATION DES SKILLS EXPERTS
+skills_active:
+  - "ui-ux-pro-max"
+  - "local-seo-optimizer"
+  - "french-compliance-legal"
+
+# 3. AUDIT MILITAIRE (Qualité Agence)
+audit_strategy:
+  mode: "deep-ast-scan"
+  scan_depth: "exhaustive"
+  accessibility_standard: "RGAA-4.1"
+  performance_target: "core-web-vitals-95"
+  critical_review_model: "gemini-3.1-pro-high"
+  enable_tts_feedback: true
+
+# 4. PRÉSENTATION CLIENT (Haut de gamme)
+presentation_settings:
+  voice_engine: "gemini-3.1-flash-tts"
+  language: "fr-FR"
+  tone: "expert-consultant"
+  auto_narrate: true
+
+# 5. PARAMÈTRES ARCHITECTURE & DESIGN
+freelance_specialization:
+  target_audience: "premium-local-business"
+  compliance: "french-strict"
+
+design_tokens:
+  framework: "tailwind-4.0"
+  color_space: "p3-wide-gamut"
+  vibe: "premium-authentic"
+  fluid_typography: true
+
+gamma_settings:
+  mode: "interactive-dom"
+  viewport: "responsive-all"
+
+# 6. COMMANDES MACRO (Raccourcis productivité)
+custom_commands:
+  - name: "industrial-build"
+    description: "Execute the industrial build with all skills"
+    command: "run chain-of-thought-bridge --apply-all-skills"
+  
+  - name: "deep-audit"
+    description: "Perform a deep AST scan and generate a report"
+    command: "run deep-ast-scan --focus:accessibility,performance,seo --format:report"
+  
+  - name: "client-demo"
+    description: "Generate an interactive lookbook for the client"
+    command: "generate interactive-lookbook --tts:true --tone:premium"

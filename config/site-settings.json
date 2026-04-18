@@ -1,0 +1,36 @@
+{
+  "brand_name": "Maison Boh\u00e8me",
+  "site_description": "Coiffure, soins esth\u00e9tiques et manucure dans un lieu feutr\u00e9 pens\u00e9 comme une parenth\u00e8se attentive.",
+  "timezone": "Europe/Paris",
+  "city": null,
+  "address_lines": [],
+  "phone_display": null,
+  "phone_href": null,
+  "instagram_url": null,
+  "hours": {
+    "monday": { "label": "Lundi", "open": "09:00", "close": "19:00" },
+    "tuesday": { "label": "Mardi", "open": "09:00", "close": "19:00" },
+    "wednesday": null,
+    "thursday": { "label": "Jeudi", "open": "09:00", "close": "19:00" },
+    "friday": { "label": "Vendredi", "open": "09:00", "close": "19:00" },
+    "saturday": { "label": "Samedi", "open": "09:00", "close": "18:00" },
+    "sunday": null
+  },
+  "slot_interval_minutes": 30,
+  "booking_window_months": 3,
+  "booking_note": null,
+  "contact_note": null,
+  "legal_identity": {
+    "entity_name": "Maison Boh\u00e8me",
+    "business_description": "Institut de beaut\u00e9",
+    "siret": null
+  },
+  "host": {
+    "name": "Hostinger International Ltd",
+    "address_lines": [
+      "61 Lordou Vironos Street",
+      "6023 Larnaca, Chypre"
+    ],
+    "website": "https://www.hostinger.fr"
+  }
+}
