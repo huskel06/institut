@@ -346,7 +346,7 @@ export default function AdminPage() {
         {tab === "team" && (
            <div className="space-y-6">
               <div className="flex items-center justify-between">
-                <h2 className="font-serif text-2xl text-charcoal">Messages d&apos;\u00e9quipe</h2>
+                <h2 className="font-serif text-2xl text-charcoal">Messages d&apos;équipe</h2>
                 <button 
                   onClick={() => setShowTeamForm(true)}
                   className="flex items-center gap-2 bg-emerald text-white px-4 py-2 rounded-xl text-sm font-sans hover:bg-emerald-dark transition-all cursor-pointer"
@@ -387,7 +387,7 @@ export default function AdminPage() {
                  <div className="fixed inset-0 bg-charcoal/60 backdrop-blur-md z-[100] flex items-center justify-center p-4">
                    <div className="bg-white rounded-3xl w-full max-w-md p-8 shadow-2xl">
                     <div className="flex justify-between items-center mb-6">
-                      <h3 className="font-serif text-2xl text-charcoal">Note d&apos;\u00e9quipe</h3>
+                      <h3 className="font-serif text-2xl text-charcoal">Note d&apos;équipe</h3>
                       <button onClick={() => setShowTeamForm(false)} className="text-charcoal/40 hover:text-charcoal cursor-pointer"><X size={24}/></button>
                     </div>
                     <form className="space-y-4" onSubmit={async (e) => {

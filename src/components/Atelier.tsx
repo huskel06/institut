@@ -9,8 +9,8 @@ const galleryImages = [
   { src: "/coin-cosy.jpg", alt: "Le coin cosy avec guirlandes", span: "col-span-2 row-span-2" },
   { src: "/miroir-rond.jpg", alt: "Poste coiffure au miroir rond", span: "col-span-1 row-span-1" },
   { src: "/produits-salon.jpg", alt: "Nos produits professionnels", span: "col-span-1 row-span-1" },
-  { src: "/canape-emeraude.jpg", alt: "L'espace d\u00e9tente \u00e9meraude", span: "col-span-1 row-span-2" },
-  { src: "/brushing-cuivre.jpg", alt: "Brushing cuivr\u00e9", span: "col-span-1 row-span-1" },
+  { src: "/canape-emeraude.jpg", alt: "L'espace détente émeraude", span: "col-span-1 row-span-2" },
+  { src: "/brushing-cuivre.jpg", alt: "Brushing cuivré", span: "col-span-1 row-span-1" },
 ];
 
 export default function Atelier() {
@@ -32,11 +32,11 @@ export default function Atelier() {
             Notre philosophie
           </p>
           <h2 className="font-serif text-5xl md:text-6xl font-light text-charcoal mb-4 leading-tight">
-            Un lieu o&ugrave; le temps{" "}
-            <span className="italic font-medium text-emerald">s&apos;arr&ecirc;te</span>
+            Un lieu où le temps{" "}
+            <span className="italic font-medium text-emerald">s'arrête</span>
           </h2>
           <p className="font-sans text-base text-charcoal/[0.78] max-w-lg mx-auto mt-2 leading-relaxed">
-            Une atmosph&egrave;re feutr&eacute;e, des gestes pr&eacute;cis, une attention
+            Une atmosphère feutrée, des gestes précis, une attention
             qui reste simple.
           </p>
           <div className="flex items-center justify-center gap-4 mt-6">
@@ -59,28 +59,28 @@ export default function Atelier() {
 
               <div className="pl-8">
                 <p className="font-sans text-base text-charcoal leading-relaxed mb-6">
-                  Maison Boh&egrave;me est plus qu&apos;un institut de beaut&eacute;.
-                  C&apos;est une adresse feutr&eacute;e, au c&oelig;ur de Nice, o&ugrave;
-                  l&apos;esprit boh&egrave;me rencontre une &eacute;l&eacute;gance simple.
+                  Maison Bohème est plus qu'un institut de beauté.
+                  C'est une adresse feutrée, au cœur de Nice, où
+                  l'esprit bohème rencontre une élégance simple.
                 </p>
 
                 <p className="font-sans text-base text-charcoal leading-relaxed mb-6">
-                  Guirlandes discr&egrave;tes, velours &eacute;meraude, senteurs d&eacute;licates,
-                  lumi&egrave;re douce : l&apos;atmosph&egrave;re accompagne le soin sans jamais
+                  Guirlandes discrètes, velours émeraude, senteurs délicates,
+                  lumière douce : l'atmosphère accompagne le soin sans jamais
                   prendre toute la place.
                 </p>
 
                 <p className="font-sans text-base text-charcoal leading-relaxed mb-8">
-                  Ici, chaque rendez-vous garde quelque chose d&apos;un rituel. Les
-                  produits sont choisis avec exigence, le geste reste pr&eacute;cis,
-                  et le temps reprend un peu d&apos;espace.
+                  Ici, chaque rendez-vous garde quelque chose d'un rituel. Les
+                  produits sont choisis avec exigence, le geste reste précis,
+                  et le temps reprend un peu d'espace.
                 </p>
 
                 <div className="flex items-start gap-3 p-5 rounded-[1.15rem] bg-emerald/[0.055] border border-emerald/[0.12] shadow-[0_10px_30px_rgba(58,54,50,0.04)]">
                   <Heart size={18} strokeWidth={1.5} className="text-gold mt-0.5 shrink-0" />
                   <span className="font-serif text-base italic text-charcoal/75 leading-relaxed">
-                    &ldquo;La beaut&eacute; commence lorsque l&apos;on se sent pleinement
-                    soi. Ici, nous aidons simplement &agrave; le r&eacute;v&eacute;ler.&rdquo;
+                    &ldquo;La beauté commence lorsque l'on se sent pleinement
+                    soi. Ici, nous aidons simplement à le révéler.&rdquo;
                   </span>
                 </div>
               </div>

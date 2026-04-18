@@ -25,17 +25,17 @@ const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "";
 
 const MONTHS_FR = [
   "Janvier",
-  "F\u00e9vrier",
+  "Février",
   "Mars",
   "Avril",
   "Mai",
   "Juin",
   "Juillet",
-  "Ao\u00fbt",
+  "Août",
   "Septembre",
   "Octobre",
   "Novembre",
-  "D\u00e9cembre",
+  "Décembre",
 ];
 
 const CATEGORY_ICONS = {
@@ -170,8 +170,8 @@ export default function Booking() {
       focusTarget = nameInputRef.current;
     }
 
-    if (!/^[0-9+\\s().-]{10,}$/.test(data.phone.trim())) {
-      nextErrors.phone = "Le num\u00e9ro de t\u00e9l\u00e9phone semble incomplet.";
+    if (!/^[0-9+\s().-]{10,}$/.test(data.phone.trim())) {
+      nextErrors.phone = "Le numéro de téléphone semble incomplet.";
       focusTarget = focusTarget ?? phoneInputRef.current;
     }
 
@@ -338,13 +338,13 @@ export default function Booking() {
           transition={{ duration: 0.8 }}
         >
           <p className="font-sans text-sm tracking-[0.3em] uppercase text-gold font-medium mb-4">
-            R\u00e9servation
+            Réservation
           </p>
           <h2
             id="booking-heading"
             className="font-serif text-5xl md:text-6xl font-light text-charcoal mb-4"
           >
-            R\u00e9servez votre <span className="italic font-medium text-gold">instant</span>
+            Réservez votre <span className="italic font-medium text-gold">instant</span>
           </h2>
           <div className="mx-auto w-12 h-[1px] bg-gradient-to-r from-transparent via-gold/60 to-transparent mt-4" />
         </motion.div>
@@ -574,7 +574,7 @@ export default function Booking() {
                     transition={{ duration: 0.3 }}
                   >
                     <p className="font-sans text-xs text-charcoal/70 mb-3">
-                      Cr\u00e9neaux propos\u00e9s le{" "}
+                      Créneaux proposés le{" "}
                       {data.date.toLocaleDateString("fr-FR", {
                         weekday: "long",
                         day: "numeric",
@@ -597,7 +597,7 @@ export default function Booking() {
                       </p>
                     ) : availableSlots.length === 0 ? (
                       <p className="font-sans text-sm text-charcoal/80 text-center py-4" aria-live="polite">
-                        Aucun cr\u00e9neau disponible ce jour. Essayez une autre date.
+                        Aucun créneau disponible ce jour. Essayez une autre date.
                       </p>
                     ) : (
                       <div className="grid grid-cols-4 sm:grid-cols-6 gap-2">
@@ -687,7 +687,7 @@ export default function Booking() {
 
                   <div>
                     <label htmlFor="booking-phone" className="flex items-center gap-2 font-sans text-xs text-charcoal/80 mb-1.5">
-                      <Phone size={14} /> T\u00e9l\u00e9phone
+                      <Phone size={14} /> Téléphone
                     </label>
                     <input
                       ref={phoneInputRef}
@@ -744,13 +744,13 @@ export default function Booking() {
                         </div>
                       </div>
                       <span className="font-sans text-xs text-charcoal/80 leading-relaxed">
-                        J&apos;accepte que mes donn\u00e9es (nom, t\u00e9l\u00e9phone) soient utilis\u00e9es pour
-                        g\u00e9rer mon rendez-vous. Consultez notre{" "}
+                        J&apos;accepte que mes données (nom, téléphone) soient utilisées pour
+                        gérer mon rendez-vous. Consultez notre{" "}
                         <a
                           href="/politique-confidentialite/"
                           className="text-emerald underline hover:text-gold transition-colors"
                         >
-                          politique de confidentialit\u00e9
+                          politique de confidentialité
                         </a>
                       </span>
                     </label>

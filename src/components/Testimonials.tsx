@@ -6,23 +6,23 @@ import { motion, AnimatePresence } from "framer-motion";
 const testimonials = [
   {
     quote:
-      "Un vrai cocon de douceur\u00a0! L\u2019\u00e9quipe est adorable et le r\u00e9sultat toujours au top.",
+      "Un vrai cocon de douceur ! L’équipe est adorable et le résultat toujours au top.",
     author: "Marie L.",
   },
   {
     quote:
-      "Mon institut pr\u00e9f\u00e9r\u00e9 \u00e0 Nice. Les filles sont aux petits soins, on se sent comme \u00e0 la maison.",
+      "Mon institut préféré à Nice. Les filles sont aux petits soins, on se sent comme à la maison.",
     author: "Sophie D.",
   },
   {
     quote:
-      "Balayage parfait et ambiance chaleureuse. Je recommande les yeux ferm\u00e9s\u00a0!",
+      "Balayage parfait et ambiance chaleureuse. Je recommande les yeux fermés !",
     author: "Camille R.",
   },
   {
     quote:
-      "Des mains en or et un accueil toujours souriant. Merci Maison Boh\u00e8me\u00a0!",
-    author: "L\u00e9a M.",
+      "Des mains en or et un accueil toujours souriant. Merci Maison Bohème !",
+    author: "Léa M.",
   },
 ];
 
@@ -68,7 +68,7 @@ export default function Testimonials() {
           transition={{ duration: 0.8 }}
         >
           <p className="font-sans text-sm tracking-[0.3em] uppercase text-gold font-medium mb-4">
-            T&eacute;moignages
+            Témoignages
           </p>
           <h2 className="font-serif text-5xl md:text-6xl font-light text-charcoal mb-4 leading-tight">
             Ce qu&apos;elles en{" "}

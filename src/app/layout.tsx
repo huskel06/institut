@@ -26,7 +26,7 @@ const sacramento = Sacramento({
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteSettings.brand_name} | Institut de beaut\u00e9`,
+    default: `${siteSettings.brand_name} | Institut de beauté`,
     template: `%s | ${siteSettings.brand_name}`,
   },
   description: siteSettings.site_description,

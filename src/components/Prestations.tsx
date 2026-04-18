@@ -16,14 +16,14 @@ const prestations = [
   {
     icon: Scissors,
     title: "Coiffure",
-    subtitle: "Un rituel sacr\u00e9 pour sculpter votre lumi\u00e8re.",
+    subtitle: "Un rituel sacré pour sculpter votre lumière.",
     services: [
       "Coupe signature",
       "Balayage solaire",
       "Soin profond botox",
-      "Coiffure \u00e9v\u00e9nementielle",
+      "Coiffure événementielle",
     ],
-    buttonText: "R\u00e9v\u00e9ler ma parure",
+    buttonText: "Révéler ma parure",
     buttonHref: "#reservation",
     image: "/coupe-action.jpg",
   },
@@ -34,10 +34,10 @@ const prestations = [
     services: [
       "Soin visage Hydrafacial",
       "Massage signature",
-      "\u00c9pilation haute pr\u00e9cision",
+      "Épilation haute précision",
       "Rehaussement de cils",
     ],
-    buttonText: "\u00c9veiller mon \u00e9clat",
+    buttonText: "Éveiller mon éclat",
     buttonHref: "#reservation",
     image: "/coin-detente.jpg",
   },
@@ -111,12 +111,12 @@ export default function Prestations() {
             Nos rituels
           </p>
           <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl font-light text-charcoal mb-4 leading-[0.98]">
-            Des rituels pens&eacute;s avec{" "}
+            Des rituels pensés avec{" "}
             <span className="italic font-medium text-emerald">justesse</span>
           </h2>
           <p className="font-sans text-base text-charcoal/[0.78] max-w-lg mx-auto mt-3 leading-relaxed">
-            Coiffure, esth&eacute;tique et gestes pr&eacute;cis, dans le m&ecirc;me
-            tempo calme et r\u00e9g\u00e9n\u00e9rant.
+            Coiffure, esthétique et gestes précis, dans le même
+            tempo calme et régénérant.
           </p>
           <div className="flex items-center justify-center gap-4 mt-6">
             <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-gold/[0.36]" />
